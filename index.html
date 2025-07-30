@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Product list with cart</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="module hidden">
+      <div class="module-container">
+        <img
+          src="./assets/images/icon-order-confirmed.svg"
+          alt="logo"
+          class="logo"
+        />
+        <div class="module-content">
+          <h1 class="header">Order Confirmed</h1>
+          <p class="description">Thank you for your order!</p>
+          <div class="order-details"></div>
+        </div>
+
+        <button class="start-new-order">Continue Shopping</button>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="left-side">
+        <h1>Desserts</h1>
+
+        <div class="grid-container"></div>
+      </div>
+
+      <div class="right-side">
+        <div class="cart-container">
+          <div class="cart-header">
+            Your Cart (<span class="count">0</span>)
+          </div>
+          <div class="optional-cart hidden">
+            <div class="cart-items"></div>
+            <div class="order-total">
+              <div class="total-label">Total</div>
+              <div class="total-price">$<span class="total">0.00</span></div>
+            </div>
+            <button class="checkout-button">Confirm Order</button>
+          </div>
+          <div class="empty-cart">
+            <img src="./assets/images/illustration-empty-cart.svg" alt="" />
+            Your added Items will appear here.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./index.js"></script>
+</html>
