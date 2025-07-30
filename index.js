@@ -281,15 +281,15 @@ function confirmOder() {
         `;
 
     flexContainer.prepend(itemElement);
+  }
 
-    const totalElement = document.createElement("div");
-    totalElement.className = "order-total";
-    totalElement.innerHTML = `
+  const totalElement = document.createElement("div");
+  totalElement.className = "order-total";
+  totalElement.innerHTML = `
             <div class="total-label">Order Total</div>
             <div class="total-price">$<span class="total">${updateTotal()}</span></div>
         `;
-    flexContainer.appendChild(totalElement);
-  }
+  flexContainer.appendChild(totalElement);
 }
 
 function continueShopping() {
